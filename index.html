@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>VaultiQ -Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">VaultiQ</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Password Manager</h1>
+        🔐 Welcome to Secure Access.
+        Your passwords, encrypted. Your data, protected.
+        Experience seamless security and effortless management — all in one place.
+        Confidence begins with control.
+        <h2>Your password <span id="alert">(copied!)</span></h2>
+        <p class="alert">password copied</p>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>UserName</th>
+                <th>PassWord</th>
+                <th>Delete</th>
+                <td> </td>
+            </tr>
+
+        </table>
+        <h3>Add a PassWord</h3>
+        <form action="/submit" method="post">
+
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button class="btn" type="submit">save</button>
+        </form>
+    </div>
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
